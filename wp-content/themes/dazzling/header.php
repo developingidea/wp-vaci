@@ -21,6 +21,11 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
+	<div id="important" style="background: #23282D; color: #fff; height: 40px; line-height: 35px; font-size: 11px; position: relative; display: block;">
+		<div class="container">
+		<b>1056 Budapest, Váci utca 43.</b> | OM Azonosító: <b>034889</b> | Telefonszám: <b>(872)7981</b> | Email: <a href="mailto:vaci@belvaros-lipotvaros.hu">vaci@belvaros-lipotvaros.hu</a>
+		</div>
+	</div>
 
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="container">
