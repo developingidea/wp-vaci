@@ -1,0 +1,5 @@
+Version 1.0.1
+Tweak - Optimized read more button with a filter
+
+Version 1.0.0
+Theme release!

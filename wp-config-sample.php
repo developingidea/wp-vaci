@@ -1,80 +1,81 @@
 <?php
-/**
- * The base configurations of the WordPress.
+/** 
+ * A WordPress fő konfigurációs állománya
  *
- * This file has the following configurations: MySQL settings, Table Prefix,
- * Secret Keys, and ABSPATH. You can find more information by visiting
- * {@link https://codex.wordpress.org/Editing_wp-config.php Editing wp-config.php}
- * Codex page. You can get the MySQL settings from your web host.
+ * Ebben a fájlban a következő beállításokat lehet megtenni: MySQL beállítások
+ * tábla előtagok, titkos kulcsok, a WordPress nyelve, és ABSPATH.
+ * További információ a fájl lehetséges opcióiról angolul itt található:
+ * {@link http://codex.wordpress.org/Editing_wp-config.php Editing wp-config.php} 
+ *  A MySQL beállításokat a szolgáltatónktól kell kérni.
  *
- * This file is used by the wp-config.php creation script during the
- * installation. You don't have to use the web site, you can just copy this file
- * to "wp-config.php" and fill in the values.
+ * Ebből a fájlból készül el a telepítési folyamat közben a wp-config.php
+ * állomány. Nem kötelező a webes telepítés használata, elegendő átnevezni 
+ * "wp-config.php" névre, és kitölteni az értékeket.
  *
  * @package WordPress
  */
 
-// ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define('DB_NAME', 'database_name_here');
+// ** MySQL beállítások - Ezeket a szolgálatótól lehet beszerezni ** //
+/** Adatbázis neve */
+define('DB_NAME', 'adatbázis_neve');
 
-/** MySQL database username */
-define('DB_USER', 'username_here');
+/** MySQL felhasználónév */
+define('DB_USER', 'felhasználónév');
 
-/** MySQL database password */
-define('DB_PASSWORD', 'password_here');
+/** MySQL jelszó. */
+define('DB_PASSWORD', 'jelszó');
 
-/** MySQL hostname */
+/** MySQL  kiszolgáló neve */
 define('DB_HOST', 'localhost');
 
-/** Database Charset to use in creating database tables. */
+/** Az adatbázis karakter kódolása */
 define('DB_CHARSET', 'utf8');
 
-/** The Database Collate type. Don't change this if in doubt. */
+/** Az adatbázis egybevetése */
 define('DB_COLLATE', '');
 
 /**#@+
- * Authentication Unique Keys and Salts.
+ * Bejelentkezést tikosító kulcsok
  *
- * Change these to different unique phrases!
- * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
- * You can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.
+ * Változtassuk meg a lenti konstansok értékét egy-egy tetszóleges mondatra.
+ * Generálhatunk is ilyen kulcsokat a {@link http://api.wordpress.org/secret-key/1.1/ WordPress.org titkos kulcs szolgáltatásával}
+ * Ezeknek a kulcsoknak a módosításával bármikor kiléptethető az összes bejelentkezett felhasználó az oldalról. 
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY', 'írjunk ide valami nagyon bonyolultat');
+define('SECURE_AUTH_KEY', 'írjunk ide valami nagyon bonyolultat');
+define('LOGGED_IN_KEY', 'írjunk ide valami nagyon bonyolultat');
+define('NONCE_KEY', 'írjunk ide valami nagyon bonyolultat');
+define('AUTH_SALT',        'írjunk ide valami nagyon bonyolultat');
+define('SECURE_AUTH_SALT', 'írjunk ide valami nagyon bonyolultat');
+define('LOGGED_IN_SALT',   'írjunk ide valami nagyon bonyolultat');
+define('NONCE_SALT',       'írjunk ide valami nagyon bonyolultat');
 
 /**#@-*/
 
 /**
- * WordPress Database Table prefix.
+ * WordPress-adatbázis tábla előtag.
  *
- * You can have multiple installations in one database if you give each a unique
- * prefix. Only numbers, letters, and underscores please!
+ * Több blogot is telepíthetünk egy adatbázisba, ha valamennyinek egyedi
+ * előtagot adunk. Csak számokat, betűket és alulvonásokat adhatunk meg.
  */
 $table_prefix  = 'wp_';
 
 /**
- * For developers: WordPress debugging mode.
+ * Fejlesztőknek: WordPress hibakereső mód.
  *
- * Change this to true to enable the display of notices during development.
- * It is strongly recommended that plugin and theme developers use WP_DEBUG
- * in their development environments.
+ * Engedélyezzük ezt a megjegyzések megjelenítéséhez a fejlesztés során. 
+ * Erősen ajánlott, hogy a bővítmény- és sablonfejlesztők használják a WP_DEBUG
+ * konstansot.
  */
 define('WP_DEBUG', false);
 
-/* That's all, stop editing! Happy blogging. */
+/* Ennyi volt, kellemes blogolást! */
 
-/** Absolute path to the WordPress directory. */
+/** A WordPress könyvtár abszolút elérési útja. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
-/** Sets up WordPress vars and included files. */
+/** Betöltjük a WordPress változókat és szükséges fájlokat. */
 require_once(ABSPATH . 'wp-settings.php');

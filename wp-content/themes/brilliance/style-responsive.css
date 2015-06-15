@@ -1,0 +1,36 @@
+/* LARGE SCREENS */
+@media screen and (min-width: 1280px){}
+
+
+/* TABLET SCREENS (LANDSCAPE) */
+@media screen and (max-width: 1024px){}
+
+
+/* TABLET PORTRAIT */
+@media screen and (max-width: 800px){
+    
+	.header .logo { float:left; }
+	
+	.slider .slider-slides .slide-body { width:auto; padding-top:150px; }
+	.pagetitle .pagetitle-title { float:none; font-size:2em; }
+	.breadcrumb { float:none; }
+}
+
+
+/* SMARTPHONE */
+@media only screen and (max-width: 600px){
+	
+	.topmenu { display:none; }
+	
+	.social { float:left; }
+	
+	.testimonial-list .testimonial-image { max-width:150px; }
+	
+	/* NAVIGATION */
+	.menu-top { text-align:center;  }
+	.menu-top li { display:inline-block; }
+	.menu-top li a { margin:0 auto; }
+	
+	.footermenu { float:none; margin:0 0 30px; }
+	.menu-footer li a { margin:0 10px 10px 0; }
+}
