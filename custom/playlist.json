@@ -1,0 +1,26 @@
+{
+    "playlist": [
+        {
+            "url": "slider/slider1.jpg"
+        },
+        {
+            "url": "slider/slider2.jpg"
+        },
+        {
+            "url": "slider/slider3.jpg"
+        },
+        {
+            "url": "slider/slider4.jpg"
+        },
+        {
+            "url": "slider/slider5.jpg"
+        },
+        {
+            "url": "slider/slider6.jpg"
+        }
+    ],
+
+   "hold_time":7,
+		"loops":null,
+	 "transition_time":4
+}

@@ -17,17 +17,32 @@
 
 <?php wp_head(); ?>
 
+<script src="<?php echo esc_url( home_url( '/custom/jquery-slider.js' ) ); ?>"></script>
+		<script>
+			$(function() {		
+				$("#pan_area").smoothslider("install", {
+					"playlist_url":"<?php echo esc_url( home_url( '/custom/playlist.json' ) ); ?>", 
+					"throbber":$("#throbber"),
+				});
+			});
+
+		</script>
+		<link rel="stylesheet" type="text/css" href="<?php echo esc_url( home_url( '/custom/smooth_slider.css' ) ); ?>">
+
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<div id="important" style="background: #23282D; color: #fff; height: 40px; line-height: 35px; font-size: 11px; position: relative; display: block;">
-		<div class="container">
-		<b>1056 Budapest, Váci utca 43.</b> | OM Azonosító: <b>034889</b> | Telefonszám: <b>(872)7981</b> | Email: <a href="mailto:vaci@belvaros-lipotvaros.hu">vaci@belvaros-lipotvaros.hu</a>
-		</div>
-	</div>
 
 	<nav class="navbar navbar-default" role="navigation">
+		<div id="important" style="background: #23282D; color: #fff; height: 40px; line-height: 35px; font-size: 11px; position: relative; display: block;">
+			<div class="container">
+			<b>1056 Budapest, Váci utca 43.</b> | OM Azonosító: <b>034889</b> | Telefonszám: <b>(872)7981</b> | Email: <a href="mailto:vaci@belvaros-lipotvaros.hu">vaci@belvaros-lipotvaros.hu</a>
+			<div class="rightbox">
+				<a href="oldalterkep"><i class="fa fa-sitemap"></i> Oldaltérkép</a>  <!-- <a href="#"><i class="fa fa-search"></i> Keresés</a> -->
+			</div>
+			</div>
+		</div>
 		<div class="container">
 			<div class="navbar-header">
 			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -36,24 +51,17 @@
 			    <span class="icon-bar"></span>
 			    <span class="icon-bar"></span>
 			  </button>
-
-				<?php if( get_header_image() != '' ) : ?>
-
-					<div id="logo">					
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>"  height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
-					</div><!-- end of #logo -->
-
-				<?php endif; // header image was removed ?>
-
-				<?php if( !get_header_image() ) : ?>
-
-					<div id="logo"><img style="float: left; height: 80px; top: -5px; position: absolute;" src="<?php echo esc_url( home_url( '/custom/logo_s.png' ) ); ?>">
-						<span class="site-name"><a style="padding-left: 90px" class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
-					</div><!-- end of #logo -->
-
-				<?php endif; // header image was removed (again) ?>
-
+				<div id="logo"><a href="<?php echo esc_url( home_url( '/kezdolap' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img style="float: left; height: 80px; top: -6px; position: absolute;" src="<?php echo esc_url( home_url( '/custom/logo_s.png' ) ); ?>"></a>
+					<span class="site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/kezdolap' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
+				</div>
 			</div>
 				<?php dazzling_header_menu(); ?>
 		</div>
 	</nav><!-- .site-navigation -->
+
+<!-- 
+	<div class="slideshowwrapper">
+					<div id="overlay"></div>
+					<div id="throbber"><img src="custom/throbber.gif"></div>
+					<div id="pan_area"></div>
+				</div> -->

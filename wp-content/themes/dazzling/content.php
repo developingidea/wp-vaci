@@ -6,13 +6,12 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header page-header">
-
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php dazzling_posted_on(); ?><?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-		<span class="comments-link"><i class="fa fa-comment-o"></i><?php comments_popup_link( __( 'Leave a comment', 'dazzling' ), __( '1 Comment', 'dazzling' ), __( '% Comments', 'dazzling' ) ); ?></span>
+		<span class="comments-link"><i class="fa fa-comment-o"></i><?php comments_popup_link( __( 'Leave a comment', 'dazzling' ), __( '1 hozzászólás', 'dazzling' ), __( '% hozzászólás', 'dazzling' ) ); ?></span>
 		<?php endif; ?>
 
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>

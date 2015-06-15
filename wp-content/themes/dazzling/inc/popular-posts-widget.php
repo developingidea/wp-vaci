@@ -33,9 +33,9 @@ class dazzling_popular_posts_widget extends WP_Widget {
         <div class="widget tabbed">
             <div class="tabs-wrapper">
                 <ul class="nav nav-tabs">
-                      <li class="active"><a href="#popular-posts" data-toggle="tab"><?php esc_attr_e( 'Popular', 'dazzling' ); ?></a></li>
-                      <li><a href="#recent" data-toggle="tab"><?php esc_attr_e( 'Recent', 'dazzling' ); ?></a></li>
-                      <li><a href="#messages" data-toggle="tab"><i class="fa fa-comments tab-comment"></i></a></li>
+                      <li class="active"><a href="#popular-posts" data-toggle="tab">Népszerű</a></li>
+                      <li><a href="#recent" data-toggle="tab">Aktuális</a></li>
+                      <li><a href="#messages" data-toggle="tab">Új hozzászólások</a></li>
                 </ul>
 
             <div class="tab-content">
