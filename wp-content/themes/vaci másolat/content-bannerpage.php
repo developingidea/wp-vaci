@@ -17,8 +17,12 @@ get_header(); ?>
 ">
 	<div class="container">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
-		<span class="last-page-update">Utolsó frissítés: <?php the_modified_time('Y F j');?>.</span>
+		<span class="last-page-update">Legutóbbi frissítés: <b><?php the_modified_time('Y F j');?>.</b></span>
+		<div class="desc">	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, accusantium, sint ullam cum nisi enim pariatur sed officiis hic fugit quisquam quibusdam perferendis tempore ipsum alias inventore voluptatum iste ab? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, accusantium, sint ullam cum nisi enim pariatur sed officiis hic fugit quisquam quibusdam perferendis tempore ipsum alias inventore voluptatum iste ab?
+			<br><a href="#" class="btn btn-default banner">Idei év eredményei</a> <a href="#" class="btn btn-default banner">Korábbi évek eredményei</a> <a href="#" class="btn btn-default banner">Kapcsolat</a>
+		</div>
 	</div>
+	<i class="grad"></i>
 </header><!-- .entry-header -->
 <?php endif; ?>
 <div id="content" class="site-content container">

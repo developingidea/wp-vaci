@@ -1,21 +1,15 @@
 /*
-Theme Name: Dazzling
-Theme URI: http://colorlib.com/wp/themes/dazzling
-Author: Colorlib
-Author URI: http://colorlib.com/wp/
-Description: Dazzling is a clean, modern, minimal and fully responsive flat design WordPress WooCommerce theme well suited for blogs, static and ecommerce websites. Theme can be used for travel, corporate, portfolio, photography, green thinking, nature, health, personal and any other creative and minimalistic style website. Dazzling theme is highly customizable with unlimited color options, slider, call for action button, several widget areas and much more that can be adjusted via Theme Options. The theme is built using Bootstrap 3, which makes it responsive and mobile friendly. It features infinite scroll, SEO friendly structure, logo upload, full-screen slider, call for action section, social media icons, popular post widget and translation ready setup. This theme supports WooCommerce and Jigoshop ecommerce plugins. Dazzling is also available in Mexican Spanish, Brazilian Portuguese, Finnish, Swedish, Dutch, Hungarian, German, Persian, Lithuanian and Polish. It is Multilingual ready and compatible with WPML plugin. It is probably the best free WordPress theme built for eStores and business websites.
-Version: 1.5.1
+Theme Name: Váci Gimi
+Theme URI: 
+Author: @developingidea
+Author URI: http://twitter.com/developingidea
+Description: 
+Version: 0.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: dazzling
+Text Domain: vaci
 Domain Path: /languages/
-Tags: green, light, white, gray, black, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, responsive-layout, photoblogging, left-sidebar, translation-ready, custom-background, custom-colors, custom-menu, featured-images, full-width-template, post-formats, theme-options, threaded-comments
-
-
-This theme, like WordPress, is licensed under the GPL.
-
-Dazzling is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
-
+Tags: green, light, white, gray, black
 */
 
 /* Table of content
@@ -42,6 +36,7 @@ Dazzling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatti
 ----------------------------------------------- */
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,800,300,700,600&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900|Quicksand:400,700|Oswald:400,700|Francois+One|Patua+One&subset=latin,latin-ext);
 body {
   color: #6B6B6B;
   word-wrap: break-word;
@@ -323,6 +318,8 @@ textarea {
   background-color: transparent;
   margin-top: 10px;
 }
+
+
 .btn.btn-default.read-more:hover {
   color: #FFF;
   background-color: #1FA67A;
@@ -422,7 +419,7 @@ object {
 ----------------------------------------------- */
 
 .widget {
-  margin: 0 0 1.5em;
+  margin: 0 0 2em;
 }
 
 /* Make sure select elements fit in widgets */
@@ -1042,6 +1039,8 @@ p.logged-in-as {
 }
 
 
+/* CUSTOM */
+
 .member {
   display: block;
   position: relative;
@@ -1058,29 +1057,126 @@ p.logged-in-as {
 
 
 .fullBanner {
-  height: 250px;
+  height: 400px;
    -webkit-background-size: cover !important;  -moz-background-size: cover !important;  -o-background-size: cover !important;  background-size: cover !important;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.7) inset;
+  background-color: #444 !important;
+  position: relative;
+  overflow: hidden;
 }
 .fullBanner .container {
   padding-left: 20px;
   color: #fff;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  position: relative;
+  display: block;
+  height: 100%;
+}
+
+.fullBanner span {
+   z-index: 2;
+  position: relative;
+  display: block;
 }
 .last-page-update {
-  font-size: 12px;
+  font-size: 11px;
   text-transform: uppercase;
+  color: #eee;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    padding-left: 2px;
+    position: absolute !important;
+    bottom: -10px;
+    right: 0px;
+    background: #1FA67A;
+    line-height: 20px;
+    padding: 10px 15px; 
+}
+
+.btn.btn-default.banner {
+  border: 1px solid #E8E8E8;
+  color: #fff;
+  background-color: transparent;
+  margin-top: 10px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 0 0 1px rgba(0,0,0,0.2);
+  float: left;
+  margin-top: 23px;
+  margin-right: 20px;
+  font-size: 12px;
+}
+.btn.btn-default.banner:hover {
+  background: #fff;
+  color: #222;
+}
+
+.fullBanner .desc {
+  font-size: 15px;
+  
+  color: #fff;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    padding-left: 2px;
+    padding-top: 10px;
+    width: 70%;
+     z-index: 2;
+  position: relative;
+  display: block;
+   font-family: 'Open Sans', sans-serif;
 }
 .fullBanner h1 {
   color: #fff;
   width: 100%;
   margin: auto;
   max-width: 1170px;
-  padding-top: 100px;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+  padding-top: 90px;
+  text-shadow: 0px 0px 5px rgba(255,255,255,0.2), 2px 2px 4px rgba(0,0,0,0.3);
   text-transform: uppercase;
+  font-weight: 900;
+/*font-family: 'Quicksand', sans-serif;*/
+/*font-family: 'Oswald', sans-serif;*/
+font-family: 'Francois One', sans-serif; /*!*/
+/*font-family: 'Patua One', cursive;*/
+z-index: 2;
+position: relative;
+letter-spacing: 1px;
   
 }
+
+.fullBanner i.grad {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjklIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjQ0Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 5%, rgba(0,0,0,0.70) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(5%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.70)));
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 5%,rgba(0,0,0,0.70) 100%);
+background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 5%,rgba(0,0,0,0.70) 100%);
+background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 5%,rgba(0,0,0,0.70) 100%);
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 5%,rgba(0,0,0,0.70) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#70000000',GradientType=0 );
+
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+}
+.alapitvanyCard {
+  background: #fff;
+  border: 1px solid #E8E8E8;
+  padding: 10px;
+  position: relative;
+}
+
+.alapitvanyCard i {
+  position: absolute;
+  font-size: 50px;
+  top: 11px;
+  right: 15px;
+  color: #1FA67A;
+
+}
+
+
+
 
 /* =Call For Action
 ----------------------------------------------- */

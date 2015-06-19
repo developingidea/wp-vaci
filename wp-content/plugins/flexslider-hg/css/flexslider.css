@@ -19,7 +19,7 @@
 .flexslider-hg.flexslider ul.slides li,
 .flexslider-hg.flexslider .flex-control-nav,
 .flexslider-hg.flexslider .flex-direction-nav { margin: 0; padding: 0; list-style: none; } 
-
+.flexslider-hg.flexslider ul.slides li { overflow: hidden} 
 
 /* FlexSlider Necessary Styles
 *********************************/ 
@@ -91,7 +91,7 @@ html[xmlns] .flexslider-hg.flexslider ul.slides { display: block; }
 .flexslider-hg-corners-square .flex-direction-nav a { background-image: url(../images/bg_direction_nav_squared.png); }
 .flexslider-hg-corners-rounded .flex-direction-nav a { background-image: url(../images/bg_direction_nav_rounded.png); }
 
-.slide-data { color: #fff; position: absolute; bottom: 0px; left: 50%; right: 15px; padding: 7px 10px; background: rgba(0,0,0,0.8); max-width: 1170px; width: 100%; }
+.slide-data { color: #fff; position: absolute; bottom: 0px; left: 50%; right: 15px; padding: 15px 20px; background: rgba(0,0,0,0.6); max-width: 1170px; width: 100%; }
 .slide-data .flexslider-hg-title, .slide-data p { margin: 0; padding: 0; color: #fff; text-shadow: 0 1px 1px rgba(0,0,0,0.6); }
 .slide-data .flexslider-hg-title a { text-decoration: none; color: #fff; }
 
