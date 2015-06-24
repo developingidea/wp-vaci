@@ -160,6 +160,31 @@ add_action( 'widgets_init', 'dazzling_widgets_init' );
 include(get_template_directory() . "/inc/popular-posts-widget.php");
 
 
+
+
+function wpb_list_child_pages() { 
+
+global $post; 
+
+if ( is_page() && $post->post_parent )
+
+  $childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->post_parent . '&echo=0' );
+else
+  $childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->ID . '&echo=0' );
+
+if ( $childpages ) {
+
+  $string = '<ul class="childpages">' . $childpages . '</ul>';
+}
+
+return $string;
+
+}
+
+add_shortcode('wpb_childpages', 'wpb_list_child_pages');
+
+
+
 /**
  * Enqueue scripts and styles.
  */

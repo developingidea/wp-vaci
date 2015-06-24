@@ -37,21 +37,37 @@ Tags: green, light, white, gray, black
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,800,300,700,600&subset=latin,latin-ext);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900|Quicksand:400,700|Oswald:400,700|Francois+One|Patua+One&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic);
+
 body {
   color: #6B6B6B;
   word-wrap: break-word;
   line-height: 1.7;
   font-size: 14px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-  color: #1FA67A;
+  color: #1E824C;
   text-decoration: none;
   -webkit-transition: all 0.2s;
      -moz-transition: all 0.2s;
        -o-transition: all 0.2s;
           transition: all 0.2s;
 }
+
+.entry-content a {
+  text-decoration: underline;
+}
+.entry-content a:hover {
+  text-decoration: underline;
+}
+
 
 a:hover,
 a:focus {
@@ -77,12 +93,20 @@ h1,
 
 h2,
 .h2 {
-  font-size: 25px;
+font: 400 27px/40px 'Georgia', sans-serif;
+margin-bottom: 10px;
+z-index: 2;
+position: relative;
+}
+
+.entry-content h3, .entry-content .h3 {
+font: 400 20px/25px 'Georgia', sans-serif;
+margin-bottom: 15px;
 }
 
 h3,
 .h3 {
-  font-size: 21px;
+  font-size: 20px;
 }
 
 h4,
@@ -261,13 +285,23 @@ textarea {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0;
+  margin: 0;
+    line-height: 1.7;
+  font-family: Georgia,serif;
+  font-weight: 400;
+  font-size: 17px;
 }
 .page-content p,
 .entry-content p,
 .entry-summary p{
-  line-height: 24px;
+  line-height: 32px;
+  display: block;
+  font-family: Georgia,serif;
+  font-weight: 400;
+  font-size: 17px;
+  margin-bottom: 10px;
 }
+
 #homepageContent .entry-content{
   margin: 0 !important;
 }
@@ -300,10 +334,14 @@ textarea {
   margin-right: 10px;
 }
 .entry-title {
-  font-size: 40px;
-  margin-top: 20px;
-  color: #444;
-  text-shadow: 1px 1px 2px rgba(255,255,255,0.2), 1px 1px 1px rgba(0,0,0,0.1);
+font: 400 35px/60px 'Oswald', sans-serif;
+color: #222;
+margin: 0px 0 0 0;
+text-transform: uppercase;
+/*/*font-family: 'Patua One', cursive;*/
+z-index: 2;
+position: relative;
+text-shadow: none;
 }
 .entry-title a {
   color: #444;
@@ -631,14 +669,14 @@ li.recentcomments {
 #logo a img {
   /*border: 2px solid #aaa;*/
   border-radius: 100px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 3px 4px 15px rgba(0,0,0,0.2);
   transition: 0.3s;
 }
 
 #logo a:hover img {
   /*border: 2px solid #aaa;*/
   border-radius: 100px;
-  box-shadow: 3px 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 3px 5px 15px rgba(0,0,0,0.3);
   transition: 0.3s;
 }
 .navbar {
@@ -694,10 +732,24 @@ li.recentcomments {
 .navbar > .container .navbar-brand {
   color: #1FA67A;
   font-size: 26px;
-  line-height: 34px;
+  line-height: 36px;
   font-weight: 300;
-  font-family: 'Open Sans', sans-serif;
-  padding-left: 110px;
+  /*font-family: 'Open Sans', sans-serif;*/
+   font-family: Alegreya,Constantia,"Lucida Bright",Lucidabright,"Lucida Serif",Lucida,"DejaVu Serif","Bitstream Vera Serif","Liberation Serif",Georgia,serif;
+  padding-left: 118px;
+}
+
+.nav>li {
+/*  position: inherit !important;*/
+}
+
+.navbar-nav > li > .dropdown-menu {
+  background-color: #23282D;
+  opacity: .9;
+}
+
+.navbar-nav > li > .dropdown-menu li a {
+  color: #fff !important;
 }
 .navbar > .container .navbar-brand:hover {
   opacity: 0.5;
@@ -1047,62 +1099,133 @@ p.logged-in-as {
   float: left;
   width: 50%;
   height: 190px;
-  margin-top: 20px;
+  margin-top: 25px;
+}
+
+.member h3 {
+ font: 400 26px/33px 'Oswald', sans-serif;
+  margin: 0px 0 0 0;
+  text-transform: uppercase;
+/*/*font-family: 'Patua One', cursive;*/
+z-index: 2;
 }
 
 .member img {
   border-radius: 150px;
-  float: left; border-radius: 150px; margin-right: 20px; width: 150px; height: 150px
+  float: left; border-radius: 150px; margin-right: 20px; width: 150px; height: 150px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 
 .fullBanner {
-  height: 400px;
+  height: 255px;
    -webkit-background-size: cover !important;  -moz-background-size: cover !important;  -o-background-size: cover !important;  background-size: cover !important;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.7) inset;
   background-color: #444 !important;
   position: relative;
   overflow: hidden;
+  margin-bottom: -2px;
 }
 .fullBanner .container {
-  padding-left: 20px;
   color: #fff;
   position: relative;
   display: block;
-  height: 100%;
+  height: 110%; 
 }
 
+.fullBanner .container .text {
+  margin-top: 50px;
+  width: 80%;
+  display: block;
+  padding: 20px 30px 40px 20px;
+  position: relative;
+  float: left;
+  z-index: 2;
+}
+
+/*.fullBanner .container .bannerphoto {
+  width: 29%;
+  display: block;
+  background: rgba(0,0,0,0.9);
+  position: relative;
+  height: 110%;
+  float: right;
+}*/
+
+.fullBanner hr {
+  width:  100px;
+  background-color: #fff;
+  height: 4px;
+position: relative;
+z-index: 2;
+margin: 10px 0 20px 0;
+}
 .fullBanner span {
    z-index: 2;
   position: relative;
   display: block;
 }
 .last-page-update {
-  font-size: 11px;
-  text-transform: uppercase;
-  color: #eee;
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-    padding-left: 2px;
-    position: absolute !important;
-    bottom: -10px;
-    right: 0px;
+  font-size: 13px;
+  line-height: 1.84211em;
+  color: #fefefe !important;
+    line-height: 50px;
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+    z-index: 20;
+    position: relative;
+    text-transform: uppercase;
     background: #1FA67A;
-    line-height: 20px;
-    padding: 10px 15px; 
+    padding-left: 40px;
+      height: 50px;
+      overflow: hidden;
 }
 
+.last-page-update .date {
+  float: right;
+  display: block;
+  width: 300px;
+}
+.last-page-update .links {
+  float: left;
+  display: block;
+  width: 700px;
+
+}
+
+.last-page-update .links a{
+ color: #111;
+ font-weight: bold;
+ position: relative;
+ margin: 0 20px 0 0px;
+  display: block;
+ float: left;
+border-bottom: 3px solid rgba(255,255,255,0);
+text-shadow: 0px 0px 4px rgba(255,255,255,0.4);
+ line-height: 25px;
+ padding-top: 12px;
+
+}
+.last-page-update .links a:hover{
+ border-bottom: 3px solid rgba(255,255,255,0.9);
+ color: #222;
+ position: relative;
+ text-shadow: 0px 0px 5px rgba(255,255,255,0.5);
+
+}
 .btn.btn-default.banner {
-  border: 1px solid #E8E8E8;
+  border: 2px solid #fff;
   color: #fff;
   background-color: transparent;
   margin-top: 10px;
-  font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
-  text-shadow: 0 0 1px rgba(0,0,0,0.2);
+  font-weight: 900 !important;
+  font-family: 'Ubuntu', sans-serif;
   float: left;
-  margin-top: 23px;
+  margin-top: 30px;
   margin-right: 20px;
-  font-size: 12px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 1px !important
 }
 .btn.btn-default.banner:hover {
   background: #fff;
@@ -1110,54 +1233,69 @@ p.logged-in-as {
 }
 
 .fullBanner .desc {
-  font-size: 15px;
+  font-size: 22px;
+  line-height: 30px;
+  display: block;
   
   color: #fff;
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    /*text-shadow: 2px 2px 2px rgba(0,0,0,0.5);*/
     padding-left: 2px;
-    padding-top: 10px;
-    width: 70%;
+    padding-top: 25px;
+    width: 100%;
      z-index: 2;
   position: relative;
-  display: block;
-   font-family: 'Open Sans', sans-serif;
+  display: none;
+    font-family: Alegreya,Constantia,"Lucida Bright",Lucidabright,"Lucida Serif",Lucida,"DejaVu Serif","Bitstream Vera Serif","Liberation Serif",Georgia,serif;
+  font-weight: 400;
 }
+
+
+
 .fullBanner h1 {
+   font: 400 53px/80px 'Oswald', sans-serif;
   color: #fff;
-  width: 100%;
-  margin: auto;
-  max-width: 1170px;
-  padding-top: 90px;
-  text-shadow: 0px 0px 5px rgba(255,255,255,0.2), 2px 2px 4px rgba(0,0,0,0.3);
+  margin: 40px 0 0 0;
   text-transform: uppercase;
-  font-weight: 900;
-/*font-family: 'Quicksand', sans-serif;*/
-/*font-family: 'Oswald', sans-serif;*/
-font-family: 'Francois One', sans-serif; /*!*/
-/*font-family: 'Patua One', cursive;*/
+/*/*font-family: 'Patua One', cursive;*/
+z-index: 20;
+position: relative;
+text-shadow: none;
+
+}
+
+.parentlink, .parentlink a {
+color: #fff;
+/*/*font-family: 'Patua One', cursive;*/
 z-index: 2;
 position: relative;
-letter-spacing: 1px;
-  
+text-shadow: none;
+font-family: 'Ubuntu', sans-serif;
+font-size: 13px;
+text-transform: uppercase;
+border-bottom: 1px solid transparent;
+}
+
+.parentlink a:hover {
+border-bottom: 1px solid #fff;
+}
+
+.fullBanner h1 span {
+  font-size: 20px;
+  display: block;
 }
 
 .fullBanner i.grad {
   position: absolute;
   top: 0px;
   left: 0px;
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjklIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjQ0Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 5%, rgba(0,0,0,0.70) 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(5%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.70)));
-background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 5%,rgba(0,0,0,0.70) 100%);
-background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 5%,rgba(0,0,0,0.70) 100%);
-background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 5%,rgba(0,0,0,0.70) 100%);
-background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 5%,rgba(0,0,0,0.70) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#70000000',GradientType=0 );
+  background: url(http://localhost:8888/wp-vaci/wp-vaci/custom/overlay.png);
+  background-color: rgba(0,0,0,0.7);
 
   width: 100%;
   height: 100%;
   display: block;
   z-index: 1;
+  opacity: 0.7;
 }
 .alapitvanyCard {
   background: #fff;
@@ -1175,8 +1313,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 }
 
+.childpages li {
+  margin-left: 0px;
+  list-style-type: square;
+  margin-top: 5px;
+  line-height: 40px;
+}
 
+.childpages li a {
+  line-height: 40px;
+  margin-top: 5px;
+  text-decoration: none;
+}
 
+.childpages li a:hover {
+  text-decoration: underline;
+   border-bottom: 1px solid transparent;
+   transition: 0.2s;
+}
+
+#important .container > a:hover {
+  color: #1E824C;
+  border-bottom: 1px solid #1E824C;
+  transition: 0.2s;
+}
 
 /* =Call For Action
 ----------------------------------------------- */

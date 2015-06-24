@@ -24,7 +24,16 @@
 					"playlist_url":"<?php echo esc_url( home_url( '/custom/playlist.json' ) ); ?>", 
 					"throbber":$("#throbber"),
 				});
+
+					$(window).scroll(function(){
+						window.scroll = $(this).scrollTop();
+						console.log(scroll)
+					  	$('.fullBanner').css('background-position-x', scroll);	
+					});
+
 			});
+
+
 
 		</script>
 		<link rel="stylesheet" type="text/css" href="<?php echo esc_url( home_url( '/custom/smooth_slider.css' ) ); ?>">
@@ -39,7 +48,7 @@
 			<div class="container">
 			<b>1056 Budapest, Váci utca 43.</b> | OM Azonosító: <b>034889</b> | Telefonszám: <b>(872)7981</b> | Email: <a href="mailto:vaci@belvaros-lipotvaros.hu">vaci@belvaros-lipotvaros.hu</a>
 			<div class="rightbox">
-				<a href="oldalterkep"><i class="fa fa-sitemap"></i> Oldaltérkép</a>  <!-- <a href="#"><i class="fa fa-search"></i> Keresés</a> -->
+				<a href="oldalterkep"><i class="fa fa-sitemap"></i></a> <a href="oldalterkep"><i class="fa fa-facebook-official"></i></a> <!-- <a href="#"><i class="fa fa-search"></i> Keresés</a> -->
 			</div>
 			</div>
 		</div>
