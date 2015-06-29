@@ -43,16 +43,17 @@ html[xmlns] .flexslider-hg.flexslider ul.slides { display: block; }
 
 
 .flexslider-hg {
-	margin-bottom: 50px !important;
+	margin-bottom: 	0px !important;
+	overflow: hidden;
 }
-.flexslider {margin: 0 0 60px; background: #fff; height: 450px; position: relative; box-shadow: 0 1px 4px rgba(0,0,0,.2); -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); -o-box-shadow: 0 1px 4px rgba(0,0,0,.2); zoom: 1;}
+.flexslider {margin: 0 0 60px; background: #fff; height: 400px; position: relative; box-shadow: 0 1px 4px rgba(0,0,0,.2); -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); -o-box-shadow: 0 1px 4px rgba(0,0,0,.2); zoom: 1;}
 .flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
 .loading .flex-viewport {max-height: 300px;}
 .flexslider .slides { zoom: 1; }
 
 .flexslider .carousel li {margin-right: 5px}
 .flexslider .slide {
-	height: 450px;
+	height: 400px;
 }
 .flexslider .slide img { border-radius: 0; box-shadow: none; position: absolute;}
 

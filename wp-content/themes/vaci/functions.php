@@ -98,7 +98,7 @@ function dazzling_widgets_init() {
     'description'   => __( 'Displays on the Home Page', 'dazzling' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget'  => '</div>',
-    'before_title'  => '<h3 class="widgettitle">',
+    'before_title'  => '<h3 class="widget-title">',
     'after_title'   => '</h3>',
   ));
 
@@ -108,7 +108,7 @@ function dazzling_widgets_init() {
     'description'   => __( 'Displays on the Home Page', 'dazzling' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget'  => '</div>',
-    'before_title'  => '<h3 class="widgettitle">',
+    'before_title'  => '<h3 class="widget-title">',
     'after_title'   => '</h3>',
   ));
 
@@ -118,7 +118,7 @@ function dazzling_widgets_init() {
     'description'   =>  __( 'Displays on the Home Page', 'dazzling' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget'  => '</div>',
-    'before_title'  => '<h3 class="widgettitle">',
+    'before_title'  => '<h3 class="widget-title">',
     'after_title'   => '</h3>',
   ));
 
@@ -128,7 +128,7 @@ function dazzling_widgets_init() {
     'description'   =>  __( 'Used for footer widget area', 'dazzling' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget'  => '</div>',
-    'before_title'  => '<h3 class="widgettitle">',
+    'before_title'  => '<h3 class="widget-title">',
     'after_title'   => '</h3>',
   ));
 
@@ -138,7 +138,7 @@ function dazzling_widgets_init() {
     'description'   =>  __( 'Used for footer widget area', 'dazzling' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget'  => '</div>',
-    'before_title'  => '<h3 class="widgettitle">',
+    'before_title'  => '<h3 class="widget-title">',
     'after_title'   => '</h3>',
   ));
 
@@ -148,7 +148,7 @@ function dazzling_widgets_init() {
     'description'   =>  __( 'Used for footer widget area', 'dazzling' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget'  => '</div>',
-    'before_title'  => '<h3 class="widgettitle">',
+    'before_title'  => '<h3 class="widget-title">',
     'after_title'   => '</h3>',
   ));
 

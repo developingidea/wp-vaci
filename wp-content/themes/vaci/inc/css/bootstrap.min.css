@@ -116,7 +116,8 @@ margin-top: 0px;
 
 #homepageContent {
 	/*padding-top: 120px;*/
-	padding-top: 100px;
+	position: relative;
+	margin-top: 100px;
 }
 
 

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<data>
+	<folder><![CDATA[Oszt&aacute;lykir&aacute;ndul&aacute;s]]></folder>
+	<fdescription><![CDATA[]]></fdescription>
+	<order></order>
+	<visibility>visible</visibility>
+	<id>8</id>
+	<folderdate>1435261350</folderdate>
+	<editor>-1</editor>
+	<viewer_level>everyone</viewer_level>
+	<photo>
+		<filename><![CDATA[Ke?pernyo?foto? 2015-06-23 - 14.01.30.png]]></filename>
+		<caption><![CDATA[]]></caption>
+		<description><![CDATA[]]></description>
+		<image>9</image>
+		<index>1</index>
+		<imagedate>1435261374</imagedate>
+	</photo>
+	<photo>
+		<filename><![CDATA[Ke?pernyo?foto? 2015-06-25 - 13.50.38.png]]></filename>
+		<caption><![CDATA[]]></caption>
+		<description><![CDATA[]]></description>
+		<image>10</image>
+		<index>2</index>
+		<imagedate>1435261374</imagedate>
+	</photo>
+	<photo>
+		<filename><![CDATA[Ke?pernyo?foto? 2015-06-25 - 18.51.56.png]]></filename>
+		<caption><![CDATA[]]></caption>
+		<description><![CDATA[]]></description>
+		<image>11</image>
+		<index>3</index>
+		<imagedate>1435261376</imagedate>
+	</photo>
+</data>

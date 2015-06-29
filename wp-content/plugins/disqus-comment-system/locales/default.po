@@ -17,11 +17,11 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../disqus/comments.php:15 ../disqus/comments.php:37
-msgid "Older Comments"
+msgid "Régebbi hozzászólások"
 msgstr ""
 
 #: ../disqus/comments.php:18 ../disqus/comments.php:40
-msgid "Newer Comments"
+msgid "Újabb hozzászólások"
 msgstr ""
 
 #: ../disqus/disqus.php:178

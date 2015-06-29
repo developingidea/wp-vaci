@@ -12,10 +12,10 @@ if (DISQUS_DEBUG) {
             <div class="navigation">
                 <div class="nav-previous">
                     <span class="meta-nav">&larr;</span>&nbsp;
-                    <?php previous_comments_link( dsq_i('Older Comments')); ?>
+                    <?php previous_comments_link( dsq_i('Régebbi hozzászólások')); ?>
                 </div>
                 <div class="nav-next">
-                    <?php next_comments_link(dsq_i('Newer Comments')); ?>
+                    <?php next_comments_link(dsq_i('Újabb hozzászólások')); ?>
                     &nbsp;<span class="meta-nav">&rarr;</span>
                 </div>
             </div> <!-- .navigation -->
@@ -34,10 +34,10 @@ if (DISQUS_DEBUG) {
             <div class="navigation">
                 <div class="nav-previous">
                     <span class="meta-nav">&larr;</span>
-                    &nbsp;<?php previous_comments_link( dsq_i('Older Comments') ); ?>
+                    &nbsp;<?php previous_comments_link( dsq_i('Régebbi hozzászólások') ); ?>
                 </div>
                 <div class="nav-next">
-                    <?php next_comments_link( dsq_i('Newer Comments') ); ?>
+                    <?php next_comments_link( dsq_i('Újabb hozzászólások') ); ?>
                     &nbsp;<span class="meta-nav">&rarr;</span>
                 </div>
             </div><!-- .navigation -->

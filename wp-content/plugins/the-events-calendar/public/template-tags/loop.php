@@ -141,7 +141,7 @@ if ( class_exists( 'TribeEvents' ) ) {
 			}
 
 			$last_event_date = tribe_get_end_date( $wp_query->posts[count( $wp_query->posts ) - 1], false );
-			$title = sprintf( __( 'Esemény ekkor %1$s - %2$s', 'tribe-events-calendar'), $first_event_date, $last_event_date );
+			$title = sprintf( __( '%1$s - %2$s', 'tribe-events-calendar'), $first_event_date, $last_event_date );
 		} elseif ( tribe_is_past() ) {
 			$title = __( 'Lejárt esemény', 'tribe-events-calendar' );
 		}

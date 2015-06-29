@@ -14,6 +14,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<link rel="icon" href="<?php echo esc_url( home_url( '/custom/favicon.png' ) ); ?>" type="image/png" />
 
 <?php wp_head(); ?>
 
@@ -53,6 +54,7 @@
 			</div>
 		</div>
 		<div class="container">
+		<img src="<?php echo esc_url( home_url( '/custom/music.png' ) ); ?>" alt="" class="music">
 			<div class="navbar-header">
 			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 			    <span class="sr-only">Toggle navigation</span>
@@ -60,7 +62,8 @@
 			    <span class="icon-bar"></span>
 			    <span class="icon-bar"></span>
 			  </button>
-				<div id="logo"><a href="<?php echo esc_url( home_url( '/kezdolap' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img style="float: left; height: 80px; top: -6px; position: absolute;" src="<?php echo esc_url( home_url( '/custom/logo_s.png' ) ); ?>"></a>
+				<div id="logo"><a href="<?php echo esc_url( home_url( '/kezdolap' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+				<img style="float: left; height: 85px; top: -9px; position: absolute;" src="<?php echo esc_url( home_url( '/custom/logo_s.png' ) ); ?>"></a>
 					<span class="site-name"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/kezdolap' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
 				</div>
 			</div>

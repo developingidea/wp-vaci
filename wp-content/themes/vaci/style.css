@@ -82,7 +82,7 @@ a:focus {
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: #1FA67A;
+  color: #1E824C;
 }
 
 h1,
@@ -313,6 +313,11 @@ textarea {
   margin-top: 140px;
   margin-bottom: 40px;
 }
+
+#content.banner {
+  margin-top: 20px !important;
+  margin-bottom: 40px;
+}
 /* =Post styling
 ----------------------------------------------- */
 .entry-meta a {
@@ -328,7 +333,7 @@ textarea {
 .entry-meta .fa {
   font-size: 14px;
   margin-right: 3px;
-  color: #1FA67A;
+  color: #1E824C;
 }
 .entry-meta span {
   margin-right: 10px;
@@ -352,15 +357,17 @@ text-shadow: none;
 .btn.btn-default.read-more {
   float: right;
   border: 1px solid #E8E8E8;
-  color: #1FA67A;
+  color: #1E824C;
   background-color: transparent;
   margin-top: 10px;
+  text-decoration: none !important;
+  border-radius: 5px;
 }
 
 
 .btn.btn-default.read-more:hover {
   color: #FFF;
-  background-color: #1FA67A;
+  background-color: #1E824C;
 }
 .search .btn.btn-default.read-more {
   float: none;
@@ -376,7 +383,7 @@ hr.section-divider {
 .page-links span {
   display: inline-block;
   color: #fff;
-  background-color: #1FA67A;
+  background-color: #1E824C;
   border-radius: 4px;
   padding: 2px 10px;
   margin-left: 2px;
@@ -384,15 +391,15 @@ hr.section-divider {
 .page-links a span {
   background-color: inherit;
   border: 1px solid #E8E8E8;
-  color: #1FA67A;
+  color: #1E824C;
   -webkit-transition: all 0.2s;
      -moz-transition: all 0.2s;
        -o-transition: all 0.2s;
           transition: all 0.2s;
 }
 .page-links a:hover span {
-  background-color: #1FA67A;
-  border: 1px solid #1FA67A;
+  background-color: #1E824C;
+  border: 1px solid #1E824C;
   color: #fff;
 }
 /* =Asides
@@ -561,14 +568,14 @@ li.recentcomments {
   float: left;
   padding-right: 10px;
   font-size: 20px;
-  color: #1FA67A;
+  color: #1E824C;
 }
 
 /* =Buttons
 ----------------------------------------------- */
 .btn-default, .label-default {
-  background-color: #1FA67A;
-  border-color: #1FA67A;
+  background-color: #1E824C;
+  border-color: #1E824C;
 }
 .btn-default:hover, .label-default[href]:hover, .label-default[href]:focus, .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover {
   background-color: #1b926c;
@@ -599,14 +606,14 @@ li.recentcomments {
   padding: 12px;
   background: transparent;
   border: 1px solid #E8E8E8;
-  color: #1FA67A;
+  color: #1E824C;
   -webkit-transition: all 0.2s;
      -moz-transition: all 0.2s;
        -o-transition: all 0.2s;
           transition: all 0.2s;
 }
 #infinite-handle span:hover {
-  background-color: #1FA67A;
+  background-color: #1E824C;
   color: #fff;
 }
 .woocommerce #infinite-handle {
@@ -648,7 +655,7 @@ li.recentcomments {
 .site-main [class*="navigation"] a:hover,
 .more-link:hover {
   color: #fff;
-  background: #1FA67A;
+  background: #1E824C;
   text-decoration: none;
 }
 .more-link {
@@ -665,6 +672,9 @@ li.recentcomments {
 [class*="navigation"] .nav-next {
   float: right;
   text-align: right;
+}
+#logo {
+  z-index: 1000;
 }
 #logo a img {
   /*border: 2px solid #aaa;*/
@@ -730,13 +740,13 @@ li.recentcomments {
   padding-right: 5px;
 }
 .navbar > .container .navbar-brand {
-  color: #1FA67A;
+  color: #1E824C;
   font-size: 26px;
-  line-height: 36px;
+  line-height: 35px;
   font-weight: 300;
   /*font-family: 'Open Sans', sans-serif;*/
    font-family: Alegreya,Constantia,"Lucida Bright",Lucidabright,"Lucida Serif",Lucida,"DejaVu Serif","Bitstream Vera Serif","Liberation Serif",Georgia,serif;
-  padding-left: 118px;
+  padding-left: 114px;
 }
 
 .nav>li {
@@ -779,7 +789,7 @@ li.recentcomments {
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
   color: #fff;
-  background-color: #1FA67A;
+  background-color: #1E824C;
 }
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
   color: #999;
@@ -799,7 +809,7 @@ li.recentcomments {
 }
 .dropdown-menu > .active > a,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a {
-  background-color: #1FA67A;
+  background-color: #1E824C;
   color: #fff;
 }
 
@@ -915,7 +925,7 @@ p.logged-in-as {
 }
 #image-navigation .nav-previous a:hover,
 #image-navigation .nav-next a:hover{
-  background-color: #1FA67A;
+  background-color: #1E824C;
   color: #fff;
 }
 #image-navigation .nav-previous,
@@ -927,10 +937,17 @@ p.logged-in-as {
 ----------------------------------------------- */
 
 #footer-area {
-  background-color: #313233;
+  background: url(http://localhost:8888/wp-vaci/wp-vaci/custom/footer-bg.png)  #23282D no-repeat top right;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   color: #CCC;
   font-size: 12px;
 }
+
+#footer-area .footer-inner {
+  min-height: 300px;
+
+}
+
 #footer-area a {
   color: #ccc;
 }
@@ -979,9 +996,9 @@ p.logged-in-as {
   text-align: right;
 }
 #colophon {
-  background-color: #1F1F1F;
+  background-color: #181d21;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3) inset;
   padding: 10px 0;
-  border-top: 1px solid #3A3A3A;
 }
 .site-info a {
   color: #777;
@@ -1018,7 +1035,7 @@ p.logged-in-as {
           transition: background-color 0.1s linear;
 }
 .scroll-to-top:hover {
-  background: #1FA67A;
+  background: #1E824C;
   opacity: .8;
 }
 
@@ -1100,10 +1117,11 @@ p.logged-in-as {
   width: 50%;
   height: 190px;
   margin-top: 25px;
+  font-size: 16px;
 }
 
 .member h3 {
- font: 400 26px/33px 'Oswald', sans-serif;
+ font: 400 23px/33px 'Oswald', sans-serif;
   margin: 0px 0 0 0;
   text-transform: uppercase;
 /*/*font-family: 'Patua One', cursive;*/
@@ -1113,7 +1131,7 @@ z-index: 2;
 .member img {
   border-radius: 150px;
   float: left; border-radius: 150px; margin-right: 20px; width: 150px; height: 150px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 
@@ -1169,15 +1187,15 @@ margin: 10px 0 20px 0;
   font-size: 13px;
   line-height: 1.84211em;
   color: #fefefe !important;
-    line-height: 50px;
+    line-height: 40px;
     font-family: "Ubuntu", sans-serif;
   font-weight: 400;
     z-index: 20;
     position: relative;
     text-transform: uppercase;
-    background: #1FA67A;
+    background: #1E824C;
     padding-left: 40px;
-      height: 50px;
+      height: 40px;
       overflow: hidden;
 }
 
@@ -1289,7 +1307,7 @@ border-bottom: 1px solid #fff;
   top: 0px;
   left: 0px;
   background: url(http://localhost:8888/wp-vaci/wp-vaci/custom/overlay.png);
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.2);
 
   width: 100%;
   height: 100%;
@@ -1309,7 +1327,7 @@ border-bottom: 1px solid #fff;
   font-size: 50px;
   top: 11px;
   right: 15px;
-  color: #1FA67A;
+  color: #1E824C;
 
 }
 
@@ -1338,13 +1356,140 @@ border-bottom: 1px solid #fff;
   transition: 0.2s;
 }
 
+
+#headLink {
+  font-size: 13px;
+  line-height: 1.84211em;
+  color: #fefefe !important;
+    line-height: 100px;
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+    z-index: 20;
+    position: relative;
+    text-transform: uppercase;
+    background: #1E824C;
+    padding-left: 40px;
+      height: 100px;
+      overflow: hidden;
+}
+
+#homepageContent .entry-content > .content {
+  min-height: 600px
+}
+
+.music {
+  position: absolute;
+  top: -27px;
+  left: -42px;
+  height: 140px;
+}
+
+#loginEnter {
+height: 480px;
+ position: relative;
+  margin: auto;
+   width: 500px;
+   display: block;
+   font-size: 25px;
+   text-decoration: none;
+   line-height: 40px;
+   padding-top: 20px;
+}
+#loginEnter span {
+  padding-top: 40px;
+  position: relative;
+  display: block;
+  float: left;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+#loginEnter b {
+  border: 1px solid #333;
+  color: #333;
+  margin: 30px auto 20px auto;
+  display: block;
+  position: relative;
+  width: 200px;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.3s;
+   line-height: 50px;
+   font-size: 18px;
+}
+#loginEnter:hover b {
+  transition: 0.3s;
+  background: #333;
+  color: #fff;
+}
+#loginEnter img{
+  margin: auto;
+  position: relative;
+  width: 200px;
+  display: block;
+  transition: 0.3s;
+}
+
+#loginEnter:hover img{
+  transform: scale(1.2);
+  transform-origin: center center;
+  transition: 0.3s;
+}
+
+#homepageEnter {
+/*  border-top: 1px solid #ddd;*/
+  padding-top: 0px;
+  width: 800px;
+  margin: auto;
+  position: relative;
+  height: 150px;
+  display: block;
+  padding-left: 2px;
+} 
+
+
+#homepageEnter a {
+ display: block;
+ width: 21%;
+ margin: 2%;
+ position: relative;
+ float: left;
+ background: #fff;
+ height: 100px;
+ opacity: 0.8;
+ border-radius: 4px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1)
+}
+
+#homepageEnter a:hover {
+  transform: scale(1.2);
+  transform-origin: center center;
+  transition: 0.3s;
+}
+
+#homepageEnter a img {
+  display: block;
+  position: relative;
+  margin: auto;
+  max-height: 50px;
+  margin-top: 25px;
+}
+
+#homepageFooter {
+  width: 100%;
+  height: 300px;
+  background: #000;
+}
+
 /* =Call For Action
 ----------------------------------------------- */
 
+
+
 .cfa{
-  padding: 30px 0px;
-  background: #1FA67A;
-  text-align: center;
+  padding: 15px 0px;
+  background: #1E824C;
+  text-align: left;
   overflow: hidden;
 }
 .cfa-text{
@@ -1356,17 +1501,22 @@ border-bottom: 1px solid #fff;
 .cfa-button {
   background-color: transparent;
   color: #fff;
-  padding: 15px 30px;
+  padding: 15px 50px;
   border-color: #fff;
+ text-decoration: none !important; 
+ float: right;
 }
-.cfa-button a,
-.cfa-button a {
+a.cfa-button ,
+a.cfa-button  {
   color: #fff;
+   text-decoration: none !important; 
+   font-size: 18px;
+/*     font: 400 25px 'Ubuntu', sans-serif !important;*/
 }
 .cfa-button:hover {
     background-color: #fff;
-    color: #1FA67A;
+    color: #1E824C;
 }
 .cfa-button:hover a {
-    color: #1FA67A;
+    color: #1E824C;
 }

@@ -119,8 +119,8 @@ class TribeiCal {
 		}
 
 		$text  = apply_filters( 'tribe_events_ical_export_text', __( 'Export', 'tribe-events-calendar' ) . ' ' . $modifier );
-		$title = __( 'Use this to share calendar data with Google Calendar, Apple iCal and other compatible apps', 'tribe-events-calendar' );
-		$ical  = '<a class="tribe-events-ical tribe-events-button" title="' . $title . '" href="' . esc_url( tribe_get_ical_link() ) . '">+ ' . $text . '</a>';
+		$title = __( 'Esemény exportálása Google Calendar, Apple iCal és egyéb kompatibilis alkalmazásokba.', 'tribe-events-calendar' );
+		$ical  = '<a class="tribe-events-ical tribe-events-button" title="' . $title . '" href="' . esc_url( tribe_get_ical_link() ) . '">+ Esemény exportálása</a>';
 
 		echo $ical;
 	}

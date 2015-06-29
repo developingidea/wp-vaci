@@ -11,7 +11,7 @@
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php dazzling_posted_on(); ?><?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-		<span class="comments-link"><i class="fa fa-comment-o"></i><?php comments_popup_link( __( 'Leave a comment', 'dazzling' ), __( '1 hozzászólás', 'dazzling' ), __( '% hozzászólás', 'dazzling' ) ); ?></span>
+		<span class="comments-link"><i class="fa fa-comment-o"></i><?php comments_popup_link( __( 'Hozzászólás', 'dazzling' ), __( '1 hozzászólás', 'dazzling' ), __( '% hozzászólás', 'dazzling' ) ); ?></span>
 		<?php endif; ?>
 
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>

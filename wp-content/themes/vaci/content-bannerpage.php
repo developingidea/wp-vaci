@@ -46,7 +46,7 @@ get_header(); ?>
 <div class="last-page-update">
 <div class="container">
 
-<div class="links"><a href="#">Szorgalmi feladat</a> <a href="#">Verseny eredmények</a> </div>
+<!-- <div class="links"><a href="#">Szorgalmi feladat</a> <a href="#">Verseny eredmények</a> </div> -->
 
 	<div class="date"><i class="fa fa-clock-o"></i> Legutóbbi frissítés: <b><?php the_modified_time('Y F j');?>.</b></div>
 
@@ -55,7 +55,7 @@ get_header(); ?>
 </div>
 <!-- .entry-header -->
 <?php endif; ?>
-<div id="content" class="site-content container">
+<div id="content" class="site-content container banner">
 	<div id="primary" class="content-area col-sm-12 col-md-8 <?php echo of_get_option( 'site_layout', 'no entry' ); ?>">
 		<main id="main" class="site-main" role="main">
 
